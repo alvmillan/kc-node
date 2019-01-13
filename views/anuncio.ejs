@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anuncios</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Anuncios</h1>
+    <section id="anuncios" class="grid">
+        <% for(var i=0; i < anuncios.length; i++) { %>
+            <article>
+                <h2><%= anuncios[i].nombre %> 
+                    <span class="precio"><%= anuncios[i].precio %> €</span>  
+                    <% if (anuncios[i].venta === true) { %>
+                        <span class="estado">En venta</span>
+                    <% } else { %>
+                        <span class="estado">Se busca</span>
+                    <% } %>
+                </h2>
+                <span>Tags: </span>
+                <% for(var j=0; j < anuncios[i].tags.length; j++) { %>
+                    <span class="tag"><%= anuncios[i].tags[j] %></span>
+                <% } %>
+                <img class="producto" src="http://localhost:3000/images/anuncios/<%= anuncios[i].foto %>" />              
+            </article>
+        <% } %>
+    </section>
+  </body>
+</html>

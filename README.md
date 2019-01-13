@@ -25,4 +25,16 @@ npm run installDb
 npm start
 ```
 
+#### Cosas que faltan
+
+* Anuncios
+    * Filtros
+    * Paginacion
+    * Ordenacion
+* Api todas las etiquetas disponibles
+* Post de un anuncio
+
+Recursos usados:
+
+http://thecodebarbarian.com/using-async-await-with-mocha-express-and-mongoose
 

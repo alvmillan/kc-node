@@ -6,3 +6,48 @@ body {
 a {
   color: #00B7FF;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+}
+
+article {
+  border-radius: 5px;
+  padding-left: 5%;
+  padding-right: 7%;
+  border: 1px;
+  margin: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.precio {
+  padding: 1%;
+  background-color: crimson;
+  font-weight: bold;
+  color: white;
+}
+.estado {
+  padding: 1%;
+  background-color: darkorchid;
+  font-weight: bold;
+  color: white;
+}
+
+.producto {
+  width: 100%;
+  height: auto;
+  margin-top: 1.5rem;
+}
+
+.tag {
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0.6%;
+  padding-bottom: 0.6%;
+  background-color: cadetblue;
+  font-size: 1em;  
+  color: white;
+  border-radius: 2px;
+}

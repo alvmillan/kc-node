@@ -11,12 +11,12 @@
             <article>
                 <h2><%= anuncios[i].nombre %> 
                     <span class="precio"><%= anuncios[i].precio %> €</span>  
-                    <% if (anuncios[i].venta === true) { %>
-                        <span class="estado">En venta</span>
-                    <% } else { %>
-                        <span class="estado">Se busca</span>
-                    <% } %>
                 </h2>
+                <h3><% if (anuncios[i].venta === true) { %>
+                    <span class="estado">En venta</span>
+                <% } else { %>
+                    <span class="estado">Se busca</span>
+                <% } %></h3>
                 <span>Tags: </span>
                 <% for(var j=0; j < anuncios[i].tags.length; j++) { %>
                     <span class="tag"><%= anuncios[i].tags[j] %></span>

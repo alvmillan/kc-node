@@ -1,8 +1,15 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
+const router = express.Router();
+
+/**
+ * 
+ * @route GET /
+ * @group Vistas - Operaciones sobre las vistas
+ * @returns {template} 200 - Vista Index
+ * @returns {Error}  400 default - Mensaje de error
+ */
+router.get('/', (req, res) => {
   res.render('index', { title: 'Express' });
 });
 

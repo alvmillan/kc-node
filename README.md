@@ -1,9 +1,20 @@
 # Instrucciones de uso
 
-## Entornos de desarrollo
-Configuración de variables y URLs en `dev`. El archivo `/config/dev.js` forma parte de .gitignore.
+## Entornos
+
+### Entorno de desarrollo
+Configuración de variables y URLs en `dev`. 
+
+El archivo `/config/dev.js` debería formar parte de .gitignore, no forma parte por el contexto de práctica con finalidad académica del proyecto.
+
+### Entorno de produccion
 
 La configuración de `prod` está preparada por si se quiere enlazar con Heroku.
+
+## End-points API
+
+Visitar `http://localhost:3000/api-docs`
+
 
 ## Comandos 
 
@@ -25,16 +36,14 @@ npm run installDb
 npm start
 ```
 
-#### Cosas que faltan
+### Pasar linter
 
-* Anuncios
-    * Filtros
-    * Paginacion
-    * Ordenacion
-* Api todas las etiquetas disponibles
-* Post de un anuncio
+```
+npm run eslint
+```
 
-Recursos usados:
+### Arreglar errores de eslint
 
-http://thecodebarbarian.com/using-async-await-with-mocha-express-and-mongoose
-
+```
+npm run eslint-fix
+```
